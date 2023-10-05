@@ -23,40 +23,52 @@
         </div>
         <div>   
             <label>Seu Perfil *</label>
-            <label for="">
+            <label for="estudante">
                 <input type="radio" name="perfil" id="estudante">Estudante
             </label>
-            <label for="">
+            <label for="profissional">
                 <input type="radio" name="perfil" id="profissional">Profissional
             </label>
-            <label for="">Tipo Profissional</label>
-
+            <label for="tipo-pro">Tipo Profissional</label>
+            <select name="tipo-pro" id="tipo-pro">
+                <option value="">Selecione</option>
+            </select>
             <label for="">CRM</label>
         </div>
         <div>
             <label for="">Especialidade *</label>
-    
+            <select name="especialidade" id="especialidade">
+                <option value="">Selecione</option>
+            </select>
             <label for="">Área de atuação</label>
+            <select name="area" id="area">
+                <option value="">Selecione</option>
+            </select>
         </div>
         <div>
             <label for="">Estado *</label>
-            
+            <select name="estado" id="estado">
+                <option value="">Selecione</option>
+            </select>
             <label for="">Cidade *</label>
-
-            <label for="">Unidade de Atuação</label>
+            <select name="cidade" id="cidade">
+                <option value="">Selecione</option>
+            </select>
+            <label for="unidade">Unidade de Atuação</label>
+            <input type="text" name="unidade" id="unidade" placeholder="Inserir dado">
         </div>
         <h2>Informações da Conta</h2>
         <div>
             <label for="email">E-mail</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" placeholder="Inserir dado que não seja senha">
             <label for="celular">Celular</label>
-            <input type="number" name="celular" id="celular">
+            <input type="number" name="celular" id="celular" placeholder="Inserir dado">
         </div>
         <div>
             <label for="senha">Senha *</label>
-            <input type="password" name="senha" id="senha">
+            <input type="password" name="senha" id="senha" placeholder="Senha">
             <label for="confirm-senha">Confirme a senha *</label>
-            <input type="password" name="confirm-senha" id="confirm-senha">
+            <input type="password" name="confirm-senha" id="confirm-senha" placeholder="Senha">
         </div>
         <input type="checkbox" name="terms" id="terms"> Li e concordo os <a href="">termos de uso</a>
         <input type="button" value="Cadastrar">
