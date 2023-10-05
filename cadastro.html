@@ -10,24 +10,56 @@
     <p>Já tem uma conta? <a href="">Acesse Agora</a></p>
 
     <form action="">
-        <label for="nome">Nome Completo *</label>
-        <input type="text" name="nome" id="nome" placeholder="Inserir dado que não seja Senha">
-        <label for="date">Data de Nascimento *</label>
-        <input type="date" name="date" id="date" placeholder="Inserir dado">
-        <br><br>
-        <label for="cpf">CPF</label>
-        <input type="text" name="cpf" id="cpf" placeholder="Inserir dado que não seja Senha">
-        <br><br>
-        <label for="">Seu Perfil *</label>
+        <h2>Dados Pessoais</h2>
+        <div>
+            <label for="nome">Nome Completo *</label>
+            <input type="text" name="nome" id="nome" placeholder="Inserir dado que não seja Senha">
+            <label for="date">Data de Nascimento *</label>
+            <input type="date" name="date" id="date" placeholder="Inserir dado">
+        </div>
+        <div>
+            <label for="cpf">CPF</label>
+            <input type="text" name="cpf" id="cpf" placeholder="Inserir dado que não seja Senha">
+        </div>
+        <div>   
+            <label>Seu Perfil *</label>
+            <label for="">
+                <input type="radio" name="perfil" id="estudante">Estudante
+            </label>
+            <label for="">
+                <input type="radio" name="perfil" id="profissional">Profissional
+            </label>
+            <label for="">Tipo Profissional</label>
 
-        <label for="">Tipo Profissional</label>
+            <label for="">CRM</label>
+        </div>
+        <div>
+            <label for="">Especialidade *</label>
+    
+            <label for="">Área de atuação</label>
+        </div>
+        <div>
+            <label for="">Estado *</label>
+            
+            <label for="">Cidade *</label>
 
-        <label for="">CRM</label>
-        <br><br>
-        <label for="">Especialidade *</label>
-
-        <label for="">Área de atuação</label>
-
+            <label for="">Unidade de Atuação</label>
+        </div>
+        <h2>Informações da Conta</h2>
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email">
+            <label for="celular">Celular</label>
+            <input type="number" name="celular" id="celular">
+        </div>
+        <div>
+            <label for="senha">Senha *</label>
+            <input type="password" name="senha" id="senha">
+            <label for="confirm-senha">Confirme a senha *</label>
+            <input type="password" name="confirm-senha" id="confirm-senha">
+        </div>
+        <input type="checkbox" name="terms" id="terms"> Li e concordo os <a href="">termos de uso</a>
+        <input type="button" value="Cadastrar">
     </form>
 </body>
 </html>
